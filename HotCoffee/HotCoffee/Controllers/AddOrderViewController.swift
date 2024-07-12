@@ -40,6 +40,7 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
+    //MARK: Save
     @IBAction func save() {
         let name = self.nameTextField.text
         let email = self.emailTextField.text
@@ -55,8 +56,19 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.vm.selectedSize = selectedSize
         self.vm.selectedType = self.vm.types[indexPath.row]
+        
+        WebService().load(resource: Order.create(vm: self.vm)) { result in
+            switch result {
+            case.success(let order):
+                print(order)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
+    
+    //MARK: Table Methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
