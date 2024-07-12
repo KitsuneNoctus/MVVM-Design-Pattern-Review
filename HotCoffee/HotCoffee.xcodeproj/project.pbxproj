@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7096842C41A26A009037E1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7096832C41A26A009037E1 /* Order.swift */; };
 		BA853B602C40A0940056DA1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA853B5F2C40A0940056DA1D /* AppDelegate.swift */; };
 		BA853B622C40A0940056DA1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA853B612C40A0940056DA1D /* SceneDelegate.swift */; };
 		BA853B672C40A0940056DA1D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA853B662C40A0940056DA1D /* Base */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA7096832C41A26A009037E1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		BA853B5C2C40A0940056DA1D /* HotCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA853B5F2C40A0940056DA1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA853B612C40A0940056DA1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7096822C41A255009037E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA7096832C41A26A009037E1 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BA853B532C40A0940056DA1D = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		BA853B5E2C40A0940056DA1D /* HotCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				BA7096822C41A255009037E1 /* Models */,
 				BA853B782C40B5CB0056DA1D /* Services */,
 				BA853B732C40A0EE0056DA1D /* Controllers */,
 				BA853B5F2C40A0940056DA1D /* AppDelegate.swift */,
@@ -160,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7096842C41A26A009037E1 /* Order.swift in Sources */,
 				BA853B602C40A0940056DA1D /* AppDelegate.swift in Sources */,
 				BA853B622C40A0940056DA1D /* SceneDelegate.swift in Sources */,
 				BA853B752C40A1D50056DA1D /* OrdersTableViewController.swift in Sources */,
