@@ -85,16 +85,8 @@
                                     <outlet property="delegate" destination="pN9-Nj-Exb" id="yXa-Sb-G71"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-lE-KTq">
-                                <rect key="frame" x="93.666666666666686" y="512" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwS-kG-eYg">
-                                <rect key="frame" x="96.666666666666686" y="590" width="200" height="34"/>
+                                <rect key="frame" x="96.666666666666686" y="633" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="FdZ-AQ-z9W"/>
                                 </constraints>
@@ -102,7 +94,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1V-Rf-fjN">
-                                <rect key="frame" x="96.666666666666686" y="645" width="200" height="34"/>
+                                <rect key="frame" x="96.666666666666686" y="688" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="yco-o1-lSk"/>
                                 </constraints>
@@ -113,16 +105,14 @@
                         <viewLayoutGuide key="safeArea" id="Edm-ob-QAO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UgP-lE-KTq" firstAttribute="centerX" secondItem="OcM-k9-aJM" secondAttribute="centerX" id="0AR-Ls-nex"/>
                             <constraint firstItem="Rvv-Lm-Hnw" firstAttribute="top" secondItem="Edm-ob-QAO" secondAttribute="top" id="18b-21-kbw"/>
                             <constraint firstItem="y1V-Rf-fjN" firstAttribute="top" secondItem="bwS-kG-eYg" secondAttribute="bottom" constant="21" id="AkU-Zr-lZL"/>
                             <constraint firstItem="bwS-kG-eYg" firstAttribute="centerX" secondItem="OcM-k9-aJM" secondAttribute="centerX" id="MEA-s8-iVn"/>
                             <constraint firstItem="Rvv-Lm-Hnw" firstAttribute="width" secondItem="OcM-k9-aJM" secondAttribute="width" id="PlA-Gb-Dzx"/>
-                            <constraint firstItem="bwS-kG-eYg" firstAttribute="top" secondItem="UgP-lE-KTq" secondAttribute="bottom" constant="47" id="fUt-19-jdZ"/>
-                            <constraint firstItem="UgP-lE-KTq" firstAttribute="top" secondItem="Rvv-Lm-Hnw" secondAttribute="bottom" constant="35" id="q7n-Lq-8Dg"/>
                             <constraint firstItem="Rvv-Lm-Hnw" firstAttribute="leading" secondItem="Edm-ob-QAO" secondAttribute="leading" id="qCc-aD-uKX"/>
                             <constraint firstItem="Rvv-Lm-Hnw" firstAttribute="height" secondItem="OcM-k9-aJM" secondAttribute="height" multiplier="0.5" id="xwa-d1-dBC"/>
                             <constraint firstItem="y1V-Rf-fjN" firstAttribute="centerX" secondItem="OcM-k9-aJM" secondAttribute="centerX" id="z4V-v3-rR9"/>
+                            <constraint firstItem="Edm-ob-QAO" firstAttribute="bottom" secondItem="y1V-Rf-fjN" secondAttribute="bottom" constant="120" id="zog-qd-zHT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="zpg-6x-jR4">
