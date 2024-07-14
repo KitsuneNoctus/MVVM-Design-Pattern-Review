@@ -17,13 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LAs-B4-pZB">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="100" id="LAs-B4-pZB" customClass="WeatherCell" customModule="GoodWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LAs-B4-pZB" id="53l-Wt-bbL">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nM-hE-3xc">
+                                            <rect key="frame" x="297" y="31" width="76" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx8-fH-DOg">
+                                            <rect key="frame" x="20" y="37" width="52" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zx8-fH-DOg" firstAttribute="leading" secondItem="53l-Wt-bbL" secondAttribute="leading" constant="20" symbolic="YES" id="A60-jJ-G4E"/>
+                                        <constraint firstItem="4nM-hE-3xc" firstAttribute="trailing" secondItem="53l-Wt-bbL" secondAttribute="trailingMargin" id="AuL-zD-IJF"/>
+                                        <constraint firstItem="4nM-hE-3xc" firstAttribute="top" secondItem="53l-Wt-bbL" secondAttribute="topMargin" constant="20" id="Sb2-2K-4rp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zx8-fH-DOg" secondAttribute="bottom" constant="25" id="WEk-7g-wbk"/>
+                                        <constraint firstItem="zx8-fH-DOg" firstAttribute="top" secondItem="53l-Wt-bbL" secondAttribute="topMargin" constant="26" id="oJz-5X-6HN"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4nM-hE-3xc" secondAttribute="bottom" constant="19" id="xex-SF-WMg"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityNameLabel" destination="zx8-fH-DOg" id="CeR-OU-D7A"/>
+                                    <outlet property="temperatureLabel" destination="4nM-hE-3xc" id="zAK-Cm-BVJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
