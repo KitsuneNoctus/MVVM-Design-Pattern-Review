@@ -11,6 +11,7 @@ import UIKit
 class WeatherListTableViewController: UITableViewController, AddWeatherDelegate {
     
     private var weatherListViewModel = WeatherListViewModel()
+    private var lastUnitSelection: Unit!
     
     //MARK: vieDidLoad
     override func viewDidLoad() {
@@ -21,6 +22,11 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     func addWeatherDidSave(vm: WeatherViewModel) {
         weatherListViewModel.addWeatherViewModel(vm)
         self.tableView.reloadData()
+        
+        let userDefaults = UserDefaults.standard
+        if let value = userDefaults.value(forKey: "unit") as? String {
+            self.lastUnitSelection = Unit(rawValue: value)!
+        }
     }
     
     //MARK: TableView Details
@@ -84,6 +90,10 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
 
 extension WeatherListTableViewController: SettingsDelegate {
     func settingsDone(vm: SettingsViewModel) {
-        
+        if lastUnitSelection.rawValue != vm.selectedUnit.rawValue {
+            weatherListViewModel.updateUnit(to: vm.selectedUnit)
+            tableView.reloadData()
+            lastUnitSelection = Unit(rawValue: vm.selectedUnit.rawValue)!
+        }
     }
 }

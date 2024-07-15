@@ -31,7 +31,7 @@ class SettingsViewModel {
     var selectedUnit: Unit {
         get {
             let userDefaults = UserDefaults.standard
-            var unitValue = "imperial" //temporary. Need to switch back to empty later
+            var unitValue = "" 
             if let value = userDefaults.value(forKey: "unit") as? String {
                 unitValue = value
             }
