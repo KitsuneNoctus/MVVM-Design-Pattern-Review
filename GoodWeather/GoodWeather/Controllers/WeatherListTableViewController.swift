@@ -14,6 +14,16 @@ class WeatherListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let resource = Resource<WeatherResponse>(url: URL(string:"")!) { data in
+            return try? JSONDecoder().decode(WeatherResponse.self, from: data)
+        }
+        
+        Webservice().load(resource: resource) { weatherReponse in
+            if let weatherReponse = weatherReponse {
+                print(weatherReponse)
+            }
+        }
     }
     
     //MARK: TableView Details
