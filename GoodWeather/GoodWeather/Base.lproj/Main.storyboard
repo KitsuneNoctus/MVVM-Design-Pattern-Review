@@ -61,7 +61,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="QL6-gl-rUB"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="X0t-tZ-mUf">
                             <connections>
-                                <segue destination="2BY-xP-yCz" kind="presentation" id="4DL-Sq-hL9"/>
+                                <segue destination="2BY-xP-yCz" kind="presentation" identifier="AddWeatherCityViewController" id="4DL-Sq-hL9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

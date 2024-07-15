@@ -8,22 +8,16 @@
 import Foundation
 import UIKit
 
-class WeatherListTableViewController: UITableViewController {
+class WeatherListTableViewController: UITableViewController, AddWeatherDelegate {
     
     //MARK: vieDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
-        let resource = Resource<WeatherResponse>(url: URL(string:"")!) { data in
-            return try? JSONDecoder().decode(WeatherResponse.self, from: data)
-        }
-        
-        Webservice().load(resource: resource) { weatherReponse in
-            if let weatherReponse = weatherReponse {
-                print(weatherReponse)
-            }
-        }
+    }
+    
+    func addWeatherDidSave(vm: WeatherViewModel) {
+        print(vm)
     }
     
     //MARK: TableView Details
@@ -48,5 +42,24 @@ class WeatherListTableViewController: UITableViewController {
         
         return cell
         
+    }
+    
+    //MARK: Gettign setup for delegate
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddWeatherCityViewController" {
+            prepareSegueForAddWeatherCityViewController(segue: segue)
+        }
+    }
+    
+    func prepareSegueForAddWeatherCityViewController(segue: UIStoryboardSegue) {
+        guard let nav = segue.destination as? UINavigationController else {
+            fatalError("Navigation Controller not found")
+        }
+        
+        guard let addWeatherCityVC = nav.viewControllers.first as? AddWeatherCityViewController else {
+            fatalError("AddWeatherCityViewController not found")
+        }
+        
+        addWeatherCityVC.delegate = self
     }
 }
