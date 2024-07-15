@@ -139,7 +139,7 @@
             </objects>
             <point key="canvasLocation" x="-441.98473282442745" y="-18.30985915492958"/>
         </scene>
-        <!--Settings Table View Controller-->
+        <!--Settings-->
         <scene sceneID="Gjp-Lz-EO8">
             <objects>
                 <tableViewController id="eLT-0b-pw1" customClass="SettingsTableViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lUe-OD-mm8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="lUe-OD-mm8">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lUe-OD-mm8" id="7OF-3c-ecH">
@@ -162,7 +162,9 @@
                             <outlet property="delegate" destination="eLT-0b-pw1" id="0Zl-jA-kBR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fm2-XG-FVs"/>
+                    <navigationItem key="navigationItem" title="Settings" id="fm2-XG-FVs">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="IKJ-MO-SB3"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="et1-Ab-WUx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
