@@ -28,10 +28,10 @@ extension Unit {
 class SettingsViewModel {
     let units = Unit.allCases
     
-    var selectedUnits: Unit {
+    var selectedUnit: Unit {
         get {
             let userDefaults = UserDefaults.standard
-            var unitValue = ""
+            var unitValue = "imperial" //temporary. Need to switch back to empty later
             if let value = userDefaults.value(forKey: "unit") as? String {
                 unitValue = value
             }
