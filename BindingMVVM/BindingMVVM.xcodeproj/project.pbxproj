@@ -13,6 +13,8 @@
 		BA08A7A42C45E659004C4FA9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA08A7A32C45E659004C4FA9 /* Base */; };
 		BA08A7A62C45E65E004C4FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA08A7A52C45E65E004C4FA9 /* Assets.xcassets */; };
 		BA08A7A92C45E65E004C4FA9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA08A7A82C45E65E004C4FA9 /* Base */; };
+		BA08A7B42C45E8D5004C4FA9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A7B32C45E8D5004C4FA9 /* LoginViewModel.swift */; };
+		BA08A7B72C45E99D004C4FA9 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A7B62C45E99D004C4FA9 /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BA08A7A52C45E65E004C4FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA08A7A82C45E65E004C4FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA08A7AA2C45E65E004C4FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA08A7B32C45E8D5004C4FA9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BA08A7B62C45E99D004C4FA9 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		BA08A79B2C45E659004C4FA9 /* BindingMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				BA08A7B52C45E92F004C4FA9 /* CustomView */,
+				BA08A7B02C45E8AE004C4FA9 /* ViewModels */,
 				BA08A79C2C45E659004C4FA9 /* AppDelegate.swift */,
 				BA08A79E2C45E659004C4FA9 /* SceneDelegate.swift */,
 				BA08A7A02C45E659004C4FA9 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				BA08A7AA2C45E65E004C4FA9 /* Info.plist */,
 			);
 			path = BindingMVVM;
+			sourceTree = "<group>";
+		};
+		BA08A7B02C45E8AE004C4FA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA08A7B32C45E8D5004C4FA9 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BA08A7B52C45E92F004C4FA9 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				BA08A7B62C45E99D004C4FA9 /* BindingTextField.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA08A7B42C45E8D5004C4FA9 /* LoginViewModel.swift in Sources */,
 				BA08A7A12C45E659004C4FA9 /* ViewController.swift in Sources */,
+				BA08A7B72C45E99D004C4FA9 /* BindingTextField.swift in Sources */,
 				BA08A79D2C45E659004C4FA9 /* AppDelegate.swift in Sources */,
 				BA08A79F2C45E659004C4FA9 /* SceneDelegate.swift in Sources */,
 			);
