@@ -16,6 +16,7 @@
 		BA08A78D2C45AF8F004C4FA9 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A78C2C45AF8F004C4FA9 /* SettingsTableViewController.swift */; };
 		BA08A78F2C45B086004C4FA9 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A78E2C45B086004C4FA9 /* SettingsViewModel.swift */; };
 		BA08A7F72C45FC09004C4FA9 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A7F62C45FC09004C4FA9 /* SettingsViewModelTests.swift */; };
+		BA08A7F92C46023D004C4FA9 /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A7F82C46023D004C4FA9 /* WeatherListViewModelTests.swift */; };
 		BAB192D72C432AE1001DEFAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB192D62C432AE1001DEFAA /* AppDelegate.swift */; };
 		BAB192D92C432AE1001DEFAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB192D82C432AE1001DEFAA /* SceneDelegate.swift */; };
 		BAB192DE2C432AE1001DEFAA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BAB192DD2C432AE1001DEFAA /* Base */; };
@@ -48,6 +49,7 @@
 		BA08A78E2C45B086004C4FA9 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		BA08A7EB2C45FB0D004C4FA9 /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA08A7F62C45FC09004C4FA9 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		BA08A7F82C46023D004C4FA9 /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		BAB192D32C432AE1001DEFAA /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB192D62C432AE1001DEFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAB192D82C432AE1001DEFAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BA08A7F62C45FC09004C4FA9 /* SettingsViewModelTests.swift */,
+				BA08A7F82C46023D004C4FA9 /* WeatherListViewModelTests.swift */,
 			);
 			path = GoodWeatherTests;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA08A7F72C45FC09004C4FA9 /* SettingsViewModelTests.swift in Sources */,
+				BA08A7F92C46023D004C4FA9 /* WeatherListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
