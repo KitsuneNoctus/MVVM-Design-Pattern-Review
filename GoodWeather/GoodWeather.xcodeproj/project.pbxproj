@@ -15,6 +15,7 @@
 		BA08A78B2C45AC08004C4FA9 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A78A2C45AC08004C4FA9 /* Double+Extensions.swift */; };
 		BA08A78D2C45AF8F004C4FA9 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A78C2C45AF8F004C4FA9 /* SettingsTableViewController.swift */; };
 		BA08A78F2C45B086004C4FA9 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A78E2C45B086004C4FA9 /* SettingsViewModel.swift */; };
+		BA08A7EE2C45FB0D004C4FA9 /* GoodWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08A7ED2C45FB0D004C4FA9 /* GoodWeatherTests.swift */; };
 		BAB192D72C432AE1001DEFAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB192D62C432AE1001DEFAA /* AppDelegate.swift */; };
 		BAB192D92C432AE1001DEFAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB192D82C432AE1001DEFAA /* SceneDelegate.swift */; };
 		BAB192DE2C432AE1001DEFAA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BAB192DD2C432AE1001DEFAA /* Base */; };
@@ -26,6 +27,16 @@
 		BAB192F42C448A4C001DEFAA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB192F32C448A4C001DEFAA /* WebService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA08A7EF2C45FB0D004C4FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB192CB2C432AE1001DEFAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAB192D22C432AE1001DEFAA;
+			remoteInfo = GoodWeather;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BA08A77D2C458E70004C4FA9 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		BA08A7802C459278004C4FA9 /* AddWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewModel.swift; sourceTree = "<group>"; };
@@ -35,6 +46,8 @@
 		BA08A78A2C45AC08004C4FA9 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		BA08A78C2C45AF8F004C4FA9 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		BA08A78E2C45B086004C4FA9 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		BA08A7EB2C45FB0D004C4FA9 /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA08A7ED2C45FB0D004C4FA9 /* GoodWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherTests.swift; sourceTree = "<group>"; };
 		BAB192D32C432AE1001DEFAA /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB192D62C432AE1001DEFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAB192D82C432AE1001DEFAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA08A7E82C45FB0D004C4FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAB192D02C432AE1001DEFAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,10 +114,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BA08A7EC2C45FB0D004C4FA9 /* GoodWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA08A7ED2C45FB0D004C4FA9 /* GoodWeatherTests.swift */,
+			);
+			path = GoodWeatherTests;
+			sourceTree = "<group>";
+		};
 		BAB192CA2C432AE1001DEFAA = {
 			isa = PBXGroup;
 			children = (
 				BAB192D52C432AE1001DEFAA /* GoodWeather */,
+				BA08A7EC2C45FB0D004C4FA9 /* GoodWeatherTests */,
 				BAB192D42C432AE1001DEFAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BAB192D32C432AE1001DEFAA /* GoodWeather.app */,
+				BA08A7EB2C45FB0D004C4FA9 /* GoodWeatherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +189,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BA08A7EA2C45FB0D004C4FA9 /* GoodWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA08A7F12C45FB0D004C4FA9 /* Build configuration list for PBXNativeTarget "GoodWeatherTests" */;
+			buildPhases = (
+				BA08A7E72C45FB0D004C4FA9 /* Sources */,
+				BA08A7E82C45FB0D004C4FA9 /* Frameworks */,
+				BA08A7E92C45FB0D004C4FA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA08A7F02C45FB0D004C4FA9 /* PBXTargetDependency */,
+			);
+			name = GoodWeatherTests;
+			productName = GoodWeatherTests;
+			productReference = BA08A7EB2C45FB0D004C4FA9 /* GoodWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BAB192D22C432AE1001DEFAA /* GoodWeather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAB192E72C432AE4001DEFAA /* Build configuration list for PBXNativeTarget "GoodWeather" */;
@@ -186,6 +234,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					BA08A7EA2C45FB0D004C4FA9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BAB192D22C432AE1001DEFAA;
+					};
 					BAB192D22C432AE1001DEFAA = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -205,11 +257,19 @@
 			projectRoot = "";
 			targets = (
 				BAB192D22C432AE1001DEFAA /* GoodWeather */,
+				BA08A7EA2C45FB0D004C4FA9 /* GoodWeatherTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA08A7E92C45FB0D004C4FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAB192D12C432AE1001DEFAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +283,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA08A7E72C45FB0D004C4FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA08A7EE2C45FB0D004C4FA9 /* GoodWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAB192CF2C432AE1001DEFAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +314,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BA08A7F02C45FB0D004C4FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAB192D22C432AE1001DEFAA /* GoodWeather */;
+			targetProxy = BA08A7EF2C45FB0D004C4FA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		BAB192DC2C432AE1001DEFAA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -266,6 +342,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BA08A7F22C45FB0D004C4FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henrycalderon.GoodWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoodWeather";
+			};
+			name = Debug;
+		};
+		BA08A7F32C45FB0D004C4FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henrycalderon.GoodWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoodWeather";
+			};
+			name = Release;
+		};
 		BAB192E52C432AE4001DEFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,6 +558,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA08A7F12C45FB0D004C4FA9 /* Build configuration list for PBXNativeTarget "GoodWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA08A7F22C45FB0D004C4FA9 /* Debug */,
+				BA08A7F32C45FB0D004C4FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BAB192CE2C432AE1001DEFAA /* Build configuration list for PBXProject "GoodWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
